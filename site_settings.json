@@ -1,0 +1,12 @@
+{
+    "phone": "+37529445212",
+    "email": null,
+    "whatsapp": "",
+    "show_phone_btn": 1,
+    "show_email_btn": 1,
+    "show_wa_btn": 1,
+    "calc_base_regular": 150,
+    "calc_base_fast": 250,
+    "calc_base_poland": 310,
+    "calc_child_cost": 20
+}

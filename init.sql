@@ -1,0 +1,11 @@
+CREATE TABLE IF NOT EXISTS contact_requests (
+  id BIGINT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
+  name VARCHAR(150) NOT NULL,
+  email VARCHAR(190) NULL,
+  message TEXT NULL,
+  ip VARBINARY(16) NOT NULL,
+  user_agent VARCHAR(255) NULL,
+  created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  status ENUM('new','processed','spam') NOT NULL DEFAULT 'new',
+  meta JSON NULL
+) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
